@@ -2,16 +2,16 @@
 	<nav>
 		<ul>
 			<li>
-				<router-link to='/'>Home</router-link>
+				<router-link :to="{name: 'home'}">Home</router-link>
 			</li>
 			<li>
-				<router-link to='/about'>About</router-link>
+				<router-link :to="{name: 'about'}">About</router-link>
 			</li>
 			<li>
-				<router-link to='/contacts'>Contacts</router-link>
+				<router-link :to="{name: 'contacts'}">Contacts</router-link>
 			</li>
 			<li>
-				<router-link to='/articles'>Blog</router-link>
+				<router-link :to="{name: 'blog'}">Blog</router-link>
 			</li>
 		</ul>
 	</nav>

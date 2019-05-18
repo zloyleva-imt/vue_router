@@ -3,7 +3,7 @@
 		<h1>Blog</h1>
 		<ul>
 			<li v-for="article in articles" :key="article.id">
-				<router-link  :to="`/articles/${article.id}`">
+				<router-link :to="{name:'show_article', params:{article_id:article.id}}">
 					{{ article.name }}
 				</router-link>
 			</li>

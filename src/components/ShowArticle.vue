@@ -7,7 +7,7 @@ export default {
 	name: 'ShowArticle',
 	props:{
 		article_id:{
-			type: String
+			requerd: true
 		}
 	},
 	mounted(){
