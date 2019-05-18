@@ -4,6 +4,9 @@ import App from './App.vue'
 import Router from 'vue-router';
 Vue.use(Router);
 
+import VueLodash from 'vue-lodash'
+Vue.use(VueLodash);
+
 import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
@@ -47,7 +50,8 @@ const routes = [
 		component: ShowArticle,
 		props: (route) => ({
 			article_id: route.params.article_id,
-			article: articles.reduce((res,el) => el.id==route.params.article_id?el:res, null)
+			// article: articles.reduce((res,el) => el.id==route.params.article_id?el:res, null)
+			article: Vue._.findLast(articles, el => el.id==route.params.article_id)
 		})
 	}
 ];
