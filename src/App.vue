@@ -28,6 +28,7 @@ export default {
 	nav{
 		ul{
 			margin: 0;
+			padding: 0;
 			display: flex;
 			justify-content: space-between;
 			li{

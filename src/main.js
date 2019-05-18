@@ -8,6 +8,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import ShowArticle from './components/ShowArticle';
+import Blog from './components/Blog';
 
 const routes = [
 	{
@@ -24,6 +25,11 @@ const routes = [
 		path: '/contacts',
 		name: 'contacts',
 		component: Contacts
+	},
+	{
+		path: '/articles',
+		name: 'blog',
+		component: Blog
 	},
 	{
 		path: '/articles/:article_id',

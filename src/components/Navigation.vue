@@ -10,6 +10,9 @@
 			<li>
 				<router-link to='/contacts'>Contacts</router-link>
 			</li>
+			<li>
+				<router-link to='/articles'>Blog</router-link>
+			</li>
 		</ul>
 	</nav>
 </template>
