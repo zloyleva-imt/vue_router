@@ -8,7 +8,8 @@ export default {
 	props:{
 		article_id:{
 			requerd: true
-		}
+		},
+		article:{}
 	},
 	mounted(){
 		console.log(this.$route.params.article_id)

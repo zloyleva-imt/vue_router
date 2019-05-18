@@ -45,7 +45,10 @@ const routes = [
 		path: '/articles/:article_id',
 		name: 'show_article',
 		component: ShowArticle,
-		props: (route) => ({article_id: route.params.article_id})
+		props: (route) => ({
+			article_id: route.params.article_id,
+			article: articles.reduce((res,el) => el.id==route.params.article_id?el:res, null)
+		})
 	}
 ];
 
