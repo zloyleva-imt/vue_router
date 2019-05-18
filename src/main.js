@@ -7,6 +7,7 @@ Vue.use(Router);
 import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
+import ShowArticle from './components/ShowArticle';
 
 const routes = [
 	{
@@ -23,6 +24,12 @@ const routes = [
 		path: '/contacts',
 		name: 'contacts',
 		component: Contacts
+	},
+	{
+		path: '/articles/:article_id',
+		name: 'show_article',
+		component: ShowArticle,
+		props: (route) => ({article_id: route.params.article_id})
 	}
 ];
 
