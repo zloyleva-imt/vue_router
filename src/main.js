@@ -42,7 +42,10 @@ const routes = [
 		path: '/articles',
 		name: 'blog',
 		component: Blog,
-		props: {articles}
+		props: (route) => ({
+			articles,
+			page: route.query.page?route.query.page:1,
+		})
 	},
 	{
 		path: '/articles/:article_id',
